@@ -1,0 +1,32 @@
+.ui-column{
+    float:left;
+}
+
+.ui-column:last-of-type{
+    margin-right:0 !important;
+}
+
+.ui-column2{
+    margin-right: 1.2%;
+    width: 48%;
+}
+
+.ui-column3{
+    margin-right: 1.2%;
+    width: 32%;
+}
+
+.ui-column4{
+    margin-right: 0.8%;
+    width: 24%;
+}
+
+.ui-column5{
+    margin-right: 0.8%;
+    width: 19%;
+}
+
+.ui-column6{
+    margin-right: 0.6%;
+    width: 16%;
+}

@@ -1,0 +1,302 @@
+var config = {
+    "application": {
+        "name": "2w.layout.configurator",
+        "logo": {
+	    "path": "/path/to/logo",
+	    "link": "http://www.url.com"
+	},
+	"footer": "application.footer.text",
+        "intro": {
+            "path": [
+                "/path/to/image/or/html/file1",
+                "/path/to/image/or/html/file2",
+                "/path/to/image/or/html/file3"
+            ],
+            "show": 1,
+            "autoplay": 0,
+            "speed": 200
+        },
+        "pdfHandler" : "http://server.url.com/pdfhandler",
+        "contactForm": {
+            "url": "http://www.url.where.the.form.post.to/",
+            "legalText" : "contact.form.legal.text",
+            "successMessage" : "contact.form.success.message",
+            "fields": [
+                {
+                    "name": "contact.form.field.firstname",
+                    "type": "text",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.lastname",  
+                    "type": "text",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.sex",  
+                    "type": "text",
+                    "mandatory": 1,
+                    "maxChars": 20
+                },
+                {
+                    "name": "contact.form.field.email",
+                    "type": "email",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.company",
+                    "type": "text",
+                    "mandatory": 0,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.phone.number",
+                    "type": "text",
+                    "mandatory": 0,
+                    "maxChars": 250
+                }
+            ]
+        }
+    },
+    "docTypes" : [
+        {
+            "name": "service.manual",
+            "description": "service.manual.description",
+            "id": "style1",
+            "icon": "framework/css/images/document1.png",
+            "content": "build/output/content/pages.html",
+            "style": "build/output/styles/style1/style.css",
+            "layoutOptions": [
+                {
+                    "name": "format",
+                    "suggested": ["a4-portrait"]
+                },
+                {
+                    "name": "number-of-columns",
+                    "suggested": ["number-of-columns-2"]
+                },
+                {
+                    "name": "marginalia",
+                    "suggested": ["marginalia-no"]
+                },
+                {
+                    "name": "image.type",
+                    "suggested": ["halftone-with-highlighting"]
+                },
+                {
+                    "name": "safety.information",
+                    "suggested": ["ansi-z535"]
+                },
+                {
+                    "name": "tables",
+                    "suggested": ["option-1"]
+                },
+                {
+                    "name": "header",
+                    "suggested": {
+                        "outside": "main-title",
+                        "middle": "version-number",
+                        "inside": "chapter-title"
+                    },
+                },
+                {
+                    "name": "footer",
+                    "suggested": {
+                        "outside": "main-title",
+                        "middle": "page-number",
+                        "inside": "chapter-title"
+                    },
+                }
+            ] 
+        },
+        {
+            "name": "end.consumer.manual",
+            "description": "end.consumer.manual.description",
+            "id": "style2",
+            "icon": "framework/css/images/document2.png",
+            "content": "build/output/content/pages.html",
+            "style": "build/output/styles/style1/style.css",
+            "layoutOptions": [
+                {
+                    "name": "format",
+                    "suggested": ["a5-portrait"]
+                },
+                {
+                    "name": "number-of-columns",
+                    "suggested": ["number-of-columns-2"]
+                },
+                {
+                    "name": "marginalia",
+                    "suggested": ["marginalia-no"]
+                },
+                {
+                    "name": "image-type",
+                    "suggested": ["halftone-with-highlighting"]
+                },
+                {
+                    "name": "safety.information",
+                    "suggested": ["ansi-z535"]
+                },
+                {
+                    "name": "tables",
+                    "suggested": ["option-1"]
+                },
+                {
+                    "name": "header",
+                    "suggested": {
+                        "outside": "main-title",
+                        "middle": "version-number",
+                        "inside": "chapter-title"
+                    },
+                },
+                {
+                    "name": "footer",
+                    "suggested": {
+                        "outside": "main-title",
+                        "middle": "page-number",
+                        "inside": "chapter-title"
+                    },
+                }
+            ] 
+        }
+    ],
+    "layoutOptions": [
+        {
+            "name": "format",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [],
+            "options": {
+                "elements": [],
+                "values" :[ 
+                    "a4-portrait",
+                    "a5-portrait",
+                    "a4-landscape",
+                    "a5-landscape"
+                ],
+            }
+        },
+        {
+            "name": "columns",
+            "icon": "path/to/icon",
+            "js": "applyColumns",
+            "sections": [],
+            "options": {
+                "elements": ["p.par"],
+                "values" :[ 
+                    "number-of-columns-1",
+                    "number-of-columns-2",
+                    "number-of-columns-3"
+                ],
+            }
+        },
+        {
+            "name": "safety.information",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [],
+            "options": {
+                "elements": [".notice"],
+                "values" :[ 
+                    "notice-1",
+                    "notice-2",
+                    "notice-3",
+                    "notice-4"
+                ]
+            }
+        },
+        {
+            "name": "image.type",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [],
+            "options": {
+                "elements": [".image"],
+                "values" :[ 
+                    "halftone-with-highlighting",
+                    "halftone-on-black-white",
+                    "knitted-black-white",
+                    "stroke-color"
+                ]
+            }
+        },
+        {
+            "name": "tables",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [],
+            "options": {
+                "elements": ["table"],
+                "values" :[ 
+                    "option-1",
+                    "option-2",
+                    "option-3",
+                    "option-4"
+                ]
+            }
+        },
+        {
+            "name": "marginalia",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [],
+            "options": {
+                "elements": [".block-description"],
+                "values" :[ 
+                    "marginalia-yes",
+                    "marginalia-no"
+                ]
+            }
+        },
+        {
+            "name": "header",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [
+                "outside",
+                "middle",
+                "inside"
+            ],
+            "options": {
+                "elements": [".header"],
+                "values": [ 
+                    "main-title",
+                    "chapter-title",
+                    "main-title-and-chapter-title",
+                    "logo",
+                    "publish-date",
+                    "product-name",
+                    "version-number",
+                    "document-name"
+                ]
+            }
+        },
+        {
+            "name": "footer",
+            "icon": "path/to/icon",
+            "js": "",
+            "sections": [
+                "outside",
+                "middle",
+                "inside"
+            ],
+            "options": {
+                "elements": [".footer"],
+                "values": [ 
+                    "main-title",
+                    "chapter-title",
+                    "main-title-and-chapter-title",
+                    "logo",
+                    "publish-date",
+                    "product-name",
+                    "version-number",
+                    "document-name",
+                    "page-number"
+                ]
+            }
+        },
+    ]
+}

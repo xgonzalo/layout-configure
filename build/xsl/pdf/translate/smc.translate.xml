@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Translation>
+	<Language name="English" code="en">
+		<Translate ID="Warning">Warning</Translate>
+		<Translate ID="Danger">Danger</Translate>
+		<Translate ID="Caution">Caution</Translate>
+		<Translate ID="Advice">Advice</Translate>
+		<Translate ID="Attention">Attention</Translate>
+		<Translate ID="Image">Fig.</Translate>
+		<Translate ID="Image.Abbreviation">Fig.</Translate>
+		<Translate ID="Table">Table</Translate>
+		<Translate ID="Table.Abbreviation">Table</Translate>
+		<Translate ID="ImageTable.Abbreviation">Image/Table</Translate>
+		<Translate ID="Page">page</Translate>
+		<Translate ID="Page2">Page</Translate>
+		<Translate ID="See">see </Translate>
+		<Translate ID="On">on </Translate>
+		<Translate ID="In"> in </Translate>
+		<Translate ID="In2"> in </Translate>
+		<Translate ID="Section">section</Translate>
+		<Translate ID="Chapter">Chapter</Translate>
+		<Translate ID="TOC">Chapter</Translate>
+		<Translate ID="Of">of</Translate>
+	</Language>
+	<Language name="Deutsch" code="de">
+		<Translate ID="Warning">Warnung</Translate>
+		<Translate ID="Danger">Gefahr</Translate>
+		<Translate ID="Caution">Vorsicht</Translate>
+		<Translate ID="Advice">Hinweis</Translate>
+		<Translate ID="Attention">Achtung</Translate>
+		<Translate ID="Image">Abb.</Translate>
+		<Translate ID="Image.Abbreviation">Abb.</Translate>
+		<Translate ID="Table">Tabelle</Translate>
+		<Translate ID="Table.Abbreviation">Tab.</Translate>
+		<Translate ID="ImageTable.Abbreviation">Abb./Tab.</Translate>
+		<Translate ID="Page">Seite</Translate>
+		<Translate ID="Page2">Seite</Translate>
+		<Translate ID="See">siehe </Translate>
+		<Translate ID="On">auf </Translate>
+		<Translate ID="In"> im </Translate>
+		<Translate ID="In2"> in </Translate>
+		<Translate ID="Section">Abschnitt</Translate>
+		<Translate ID="Chapter">Kapitel</Translate>
+		<Translate ID="TOC">Kapitel</Translate>
+		<Translate ID="Of">von</Translate>
+	</Language>
+</Translation>

@@ -1,0 +1,122 @@
+﻿<html>
+    <head>
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap.min.css" />
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap-docs.min.css" />
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="framework/css/common/2W/common.css" />
+        <link rel="stylesheet" href="framework/css/common/2W/columns.css" />
+        <link rel="stylesheet" href="framework/css/custom/2W/wizzard.css" />
+        
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.min.js"></script>
+        <script type="text/javascript" src="framework/js/lib/2w/2W.js"></script>
+        <script type="text/javascript" src="framework/js/lib/2w/2W.UI.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Boot.js"></script>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row page-header">
+                <div class="media-left">
+                    <a href="#">
+                        <img src="framework/css/images/logo.gif" height="60" />
+                    </a>
+                </div>
+            </div>
+            <div id="step4" class="row step-hidden">
+                <div class="pull-left">
+                    <p class="leftPart">Herzlichen Glückwunsch, Ihre Konfiguration ist jetzt abgeschlossen. Damit Sie diese zu einem späteren Zeitpunkt wieder aufrufen können, senden wir Ihnen einen Link zu Ihrer gespeicherten Auswahl.</p>
+                </div>
+                <div class="pull-left">
+                    <div class="rightPart">
+                        <h1>GLEICH IST ES SOWEIT!</h1>
+                        <p class="contactInfo">Bitte tragen Sie hierzu Ihre Kontaktdaten ein und stimmen Sie den Datenschutzbestimmungen zu. Ihre Auswahl dient als Basis für Ihre internen Abstimmungen sowie bei Interesse für den Kontakt zum 2W Team.</p>
+                        <div class="formContainer form-inline">
+                            <p class="field">
+                                <label for="contact.form.field.salutation" class="control-label">Anrede: </label>
+                                <select class="form-control">
+                                    <option value="">-</option>
+                                    <option value="mr">Mr</option>
+                                    <option value="mrs">Mrs</option>
+                                    <option value="miss">Miss</option>
+                                    <option value="ms">Ms</option>
+                                    <option value="dr">Dr</option>
+                                    <option value="prof">Prof</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </p>
+                            <p class="field">
+                                <label for="contact.form.field.firstname" class="control-label">Vorname: </label>
+                                <input type="text" id="contact.form.field.firstname" class="form-control" maxlength="250" />
+                            </p>
+                            <p class="field">
+                                <label for="contact.form.field.lastname" class="control-label">Nachname: </label>
+                                <input type="text" id="contact.form.field.lastname" class="form-control" maxlength="250"/>
+                            </p>
+                            <p class="field">
+                                <label for="contact.form.field.email" class="control-label">E-Mail-Adresse: </label>
+                                <input type="email" id="contact.form.field.email" class="form-control" maxlength="250" />
+                            </p>
+                            <p class="field">
+                                <label for="contact.form.field.agree" class="control-label agreeField">Ich stimme den Datenschutzbestimmungen zu. </label>
+                                <input type="checkbox" id="contact.form.field.agree" class="form-control" />
+                            </p>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row fixed-content">
+                <a href="#" class="pull-left wizzardNaigator">
+                    <button type="button" class="btn btn-default btn-lg">
+                        Previous
+                    </button>
+                </a>
+
+                <a href="#" class="pull-right wizzardNaigator">
+                    <button type="button" class="btn btn-default btn-lg">
+                        Finish
+                    </button>
+                </a>
+            </div>
+            <div class="row page-footer">
+                <div class="footer-container">
+                    <div class="column pull-left language">
+                        <ul>
+                            <li class="deutch">
+                                <a>DE</a>
+                            </li>
+                            <li class="english">
+                                <a>EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column pull-left impressum">
+                        <label>impressum</label>
+                    </div>
+                    <div class="column pull-right info">
+                        <img class="pull-left" src="framework/css/images/logo-white.png" />
+                        <div class="pull-left">
+                            <label>2W Technische</label>
+                            <label>Informations GmbH & Co. KG</label>
+                            <label>Waldmeisterstraße 79</label>
+                            <label>D-80935 München</label>
+                            <label>Telefon: +49 89 520 35 -0 | Fax: -123</label>
+                            <label>E-Mail: info@2wgmbh.de</label>
+                            <a class="website" href="http://2wgmbh.de">zur 2W Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modalContainer visible">
+                <div class="modalOverlay">
+                </div>
+                <div class="modalWindow">
+                    <img class="closeButton" src="framework/css/images/close.png" />
+                    <h2>Lorem Ipsum</h4>
+                    <p> some content</p>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

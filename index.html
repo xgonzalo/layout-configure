@@ -1,0 +1,133 @@
+﻿<html>
+    <head>
+        <title>2Wdokfitter</title>
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap.min.css" />
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap-docs.min.css" />
+        <link rel="stylesheet" href="framework/css/common/third-party/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="framework/css/common/2W/common.css" />
+        <link rel="stylesheet" href="framework/css/common/2W/columns.css" />
+        <link rel="stylesheet" href="framework/css/custom/2W/wizzard.css" />
+        
+        <link rel="stylesheet" href="framework/css/custom/third-party/jquery.fileupload.css" />
+        <link rel="stylesheet" href="config/layoutOptions.css" />
+        
+        <!--<link rel="import" href="build/output/content/pages.html">-->
+        
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.min.js"></script>
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.ui.widget.js"></script>
+        <script type="text/javascript" src="framework/js/lib/third-party/load-image.all.min.js"></script>
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.fileupload.js"></script>
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.fileupload-process.js"></script>
+        <script type="text/javascript" src="framework/js/lib/third-party/jquery.fileupload-image.js"></script>
+        
+        <script type="text/javascript" src="config/config.json"></script> 
+        <script type="text/javascript" src="config/tokens.json"></script> 
+        
+        <script type="text/javascript" src="framework/js/lib/2w/2W.js"></script>
+        <script type="text/javascript" src="framework/js/lib/2w/2W.UI.js"></script>
+        
+        <script type="text/javascript" src="framework/js/client/2w/2W.Application.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Step1.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Step2.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Step3.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Step4.js"></script>
+        <script type="text/javascript" src="framework/js/client/2w/2W.Step5.js"></script>
+        <script type="text/javascript" src="config/layoutOptions.js"></script>
+        
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row page-header">
+                <div class="media-left">
+                    <a href="#" id="logo">
+                        <img src="framework/css/images/logo.gif" height="60" />
+                    </a>
+                </div>
+            </div>
+            
+            <div class="row step-hidden" id="step1"></div>
+            <div class="row template step-hidden" id="step2"></div>
+            <div class="row-fluid step-hidden" id="step3">
+                <div class="boxTop bs-callout">
+                    <div class="carrouselContainer">
+                        <div class="carrouselWrapper">
+                            <div class="pageContainer" id="contents">
+                            <!-- BEGIN OF DYNAMIC LOADED CONTENT -->
+            
+                            <!-- END OF DYNAMIC LOADED CONTENT -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="boxBottom bs-callout">
+                    <ul class="nav nav-tabs"></ul>
+                    <div class="tab-content"></div>
+                </div>
+            </div>
+            
+            <div class="row step-hidden" id="step4"></div>
+            <div class="row step-hidden" id="step5"></div>
+            
+            <div class="row fixed-content">
+                <a class="pull-left wizzardNaigator" id="prevBt">
+                    <button type="button" class="btn btn-default btn-lg">
+                        <span class="glyphicon glyphicon-menu-left" aria-hidden="true"></span>
+                        <span class="prevText">Previous</span>
+                    </button>
+                </a>
+                
+                <a class="pull-right wizzardNaigator" id="nextBt">
+                    <button type="button" class="btn btn-default btn-lg">
+                        <span class="nextText">Next</span>
+                        <span class="glyphicon glyphicon-menu-right" aria-hidden="true"></span>
+                    </button>
+                </a>
+                
+                <a class="pull-right wizzardNaigator" id="finishBt">
+                    <button type="button" class="btn btn-default btn-lg">
+                        <span class="finishText">Finish</span>
+                    </button>
+                </a>
+            </div>
+            <div class="row page-footer">
+                <div class="footer-container">
+                    <!--
+                    <div class="column pull-left language">
+                        <ul id="languageSwitcher">
+                            <li class="deutch">
+                                <a>DE</a>
+                            </li>
+                            <li class="english">
+                                <a>EN</a>
+                            </li>
+                        </ul>
+                    </div>
+                    -->
+                    <div class="column pull-left impressum">
+                        <label class="clickablePointer">impressum</label>
+                    </div>
+                    <div class="column pull-right info">
+                        <img class="pull-left" src="framework/css/images/logo-white.png" />
+                        <div class="pull-left">
+                            <label>2W Technische</label>
+                            <label>Informations GmbH & Co. KG</label>
+                            <label>Waldmeisterstraße 79</label>
+                            <label>D-80935 München</label>
+                            <label>Telefon: +49 89 520 35 -0 | Fax: -123</label>
+                            <label>E-Mail: <a class="mailto" href="mailto:info@2wgmbh.de" target="_top">info@2wgmbh.de</a></label>
+                            <a href="http://www.2wgmbh.de" class="website" target="_blank">zur 2W Website</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modalContainer hidden">
+                <div class="modalOverlay"></div>
+                <div class="modalWindow">
+                    <img src="framework/css/images/close.png" class="closeButton">
+                    <div class="modalContent"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

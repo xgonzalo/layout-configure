@@ -1,0 +1,120 @@
+/**
+ * 
+ * PAGE CONFIGURATOR
+ */
+
+body{
+    background-color:#84cee4;
+    overflow-y:scroll;
+}
+
+.container-fluid{
+    background-color:white;
+    min-width:1024px;
+}
+
+.h1, h1{
+    font-size:27px !important;
+}
+
+/*
+ * 
+ * END PAGE CONFIGURATOR
+ */
+
+/**
+ * 
+ * HEADER
+ */
+
+.page-header{
+    border-bottom: 0 none;
+    margin: 15px auto;
+    padding-right: 10px;
+    width: 960px;
+}
+
+.page-header img{
+    margin-right:-8px;
+}
+
+.page-header h1{
+    color: #777;
+}
+/*
+ * 
+ * END HEADER
+ */
+
+/**
+ * 
+ * BUTTONS
+ */
+
+.btn-default{
+    background-color: transparent;
+    background-image: none;
+    border: 2px solid #84cee4;
+    box-shadow: unset;
+    color: #84cee4;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    text-transform: uppercase;
+}
+
+.btn-default:hover{
+    background-color:#84cee4;
+    color:white;
+    border: 2px solid #84cee4 !important;
+}
+/*
+ * 
+ * END BUTTONS
+ */
+
+/**
+ * 
+ * FOOTER
+ */
+
+.page-footer{
+    background-color:#84cee4;
+    margin-top:50px;
+    padding-top:40px;
+    padding-bottom: 70px;
+}
+
+.page-footer .column.language{
+    margin-right: 224px;
+}
+
+.page-footer .column.language ul{
+    font-weight: bold;
+    list-style: outside none none;
+    padding-left:0;
+}
+
+.page-footer .column.language ul a{
+    color:#70acba;
+    cursor:pointer;
+    text-decoration:none !important;
+}
+
+.page-footer .column.impressum label{
+    text-transform:uppercase;
+    color:white;
+    font-weight:bold;
+}
+
+.page-footer .column.info{
+    margin-right:110x;
+}
+
+.page-footer .column.info label{
+    color: white;
+    display: block;
+    font-weight: 600;
+    margin-bottom: 3px;
+    margin-left: 22px;
+}

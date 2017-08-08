@@ -1,0 +1,799 @@
+/**
+ * FORMAT
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6703
+ */
+
+.overflow-element-hidden {
+    display:none;
+}
+
+/**
+ * NUMBER OF COLUMNS
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6702
+ */
+.number-of-columns-1{
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+}
+
+.number-of-columns-2{
+    -webkit-column-count : 2;
+    -moz-column-count : 2;
+    column-count : 2;
+    
+    -webkit-column-gap: 10px;
+    -moz-column-count: 10px;
+    column-count: 10px;
+}
+
+.number-of-columns-3{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+
+    -webkit-column-gap: 10px;
+    -moz-column-count: 10px;
+    column-count: 10px;
+}
+
+.number-of-columns-1 > *,
+.number-of-columns-2 > *,
+.number-of-columns-3 > * {
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+}
+
+
+*[class^="number-of-columns-"] img{
+    width:100%;
+}
+
+
+/**
+ * MARGINALIA
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6707
+ */
+
+.marginalia-no .block-label{
+    display:none;
+}
+
+.marginalia-yes .block-label{
+    display:block;
+    width:20%;
+    clear:both;
+    overflow:hidden;
+}
+
+.marginalia-yes .block-description {
+    left: 30%;
+    width: 70%;
+}
+/*.block-description.marginalia-no > .block-label{
+    display:none;
+}
+
+.block-description.marginalia-yes > .block-label{
+    display:block;
+}
+
+.block-description.marginalia-no > .block-content{
+    margin-left:0 !important;
+    width:100% !important;
+    max-width:100%;
+}*/
+
+/**
+ * IMAGE TYPE
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6705
+ */
+
+.image{
+    height: 473px;
+    width: 591px;
+}
+
+.image.halftone-with-highlighting img,
+.image.halftone-on-black-white img,
+.image.knitted-black-white img,
+.image.stroke-color img{
+    display:none;
+    max-width:100%
+}
+
+.image.halftone-with-highlighting,
+.image.halftone-on-black-white,
+.image.knitted-black-white,
+.image.stroke-color{
+    width:100%;
+    height:auto;
+}
+
+.image.halftone-with-highlighting .halftone-with-highlighting{
+    display:block;
+}
+
+.image.halftone-on-black-white .halftone-on-black-white{
+    display:block;
+}
+
+.image.knitted-black-white .knitted-black-white{
+    display:block;
+}
+
+.image.stroke-color .stroke-color{
+    display:block;
+}
+
+.image-front{
+    height: 473px;
+    width: 591px;
+}
+
+.image-front.halftone-with-highlighting img,
+.image-front.halftone-on-black-white img,
+.image-front.knitted-black-white img,
+.image-front.stroke-color img{
+    display:none;
+    max-width:100%
+}
+
+.image-front.halftone-with-highlighting,
+.image-front.halftone-on-black-white,
+.image-front.knitted-black-white,
+.image-front.stroke-color{
+    width:100%;
+    height:auto;
+}
+
+.image-front.halftone-with-highlighting .halftone-with-highlighting{
+    display:block;
+}
+
+.image-front.halftone-on-black-white .halftone-on-black-white{
+    display:block;
+}
+
+.image-front.knitted-black-white .knitted-black-white{
+    display:block;
+}
+
+.image-front.stroke-color .stroke-color{
+    display:block;
+}
+
+
+
+/**
+ * TABLES
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6706
+ */
+table.option-1 td{
+    border: 1px solid black !important;
+}
+
+table.option-1 tr:nth-child(even) td{
+    background-color:#C4C4C6;
+}
+
+table.option-1 .top td *{
+    font-weight:bold;
+}
+
+table.option-2{
+    border:0 none;
+}
+
+table.option-2 td {
+    border: 1px solid black !important;
+}
+
+table.option-2 .top td {
+    border-top: 0 none !important;
+}
+
+table.option-2 .bottom td {
+    border-bottom: 0 none !important;
+}
+
+table.option-2 td.left {
+    border-left: 0 none !important;
+}
+
+table.option-2 td.right {
+    border-right: 0 none !important;
+}
+
+table.option-2 .top td *{
+    font-weight:bold;
+}
+
+
+table.option-3{
+    border: 0 none !important;
+}
+
+table.option-3 td{
+    border: 0 none !important;
+}
+
+table.option-3 tr:nth-child(even) td{
+    background-color:#C4C4C6;
+}
+
+table.option-3 .top td *{
+    font-weight:bold;
+}
+
+
+table.option-4 td{
+    border: 1px solid black !important;
+}
+
+table.option-4 tr.top td{
+    background-color:#C4C4C6;
+}
+
+table.option-4 .top td *{
+    font-weight:bold;
+}
+
+
+/**
+ * HEADER
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6708
+ */
+
+.header .inside,
+.header .middle,
+.header .outside{
+    position:relative;
+}
+
+.header .header-empty *{
+    display:none;
+}
+
+.header .middle *{
+    text-align:center;
+}
+
+.header .pull-right *{
+    text-align:right;
+}
+
+.header .content > div{
+    width:33%;
+    height:63px;
+}
+
+.header .hiddenHeader *{
+    visibility:hidden;
+}
+
+.header > .content > .logo *{
+    display:none;
+}
+
+.header > .content > .logo .logo,
+.header > .content > .logo .logo *{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    max-height: 50px;
+}
+
+.header > .content > .publish-date *{
+    display:none;
+}
+
+.header > .content > .publish-date .date{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .main-title *{
+    display:none;
+}
+
+.header > .content > .main-title .title{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .chapter-title *{
+    display:none;
+}
+
+.header > .content > .chapter-title .chapter{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .main-title-and-chapter-title *{
+    display:none;
+}
+
+.header > .content > .main-title-and-chapter-title .title-chapter{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .product-name *{
+    display:none;
+}
+
+.header > .content > .product-name .productName{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .version-number *{
+    display:none;
+}
+
+.header > .content > .version-number .version{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+.header > .content > .document-name *{
+    display:none;
+}
+
+.header > .content > .document-name .documentName{
+    display:block !important;
+    position:absolute;
+    bottom:5%;
+    width:100%;
+}
+
+/**
+ * NOTICES
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6704
+ */
+
+.notice.notice-1{
+    background-color: rgb(197, 197, 199);
+}
+
+.notice.notice-1 .noticeImage{
+    width:1px;
+    height:1px;
+}
+
+.a5-portrait .notice.notice-1 .noticeImage.Advice{
+    background-image: url("../framework/css/images/info-o1-a5.png");
+    height: 51px;
+    width: 50px;
+}
+
+.notice.notice-1 .noticeImage.Advice{
+    background-image: url("../framework/css/images/info-o1.png");
+    height: 96px;
+    margin-bottom: 16px;
+    margin-right: 31px;
+    width: 94px;
+}
+
+.a5-portrait .notice.notice-1 .noticeImage.Warning,
+.a5-portrait .notice.notice-1 .noticeImage.Danger,
+.a5-portrait .notice.notice-1 .noticeImage.Caution,
+.a5-portrait .notice.notice-1 .noticeImage.Attention{
+    background-image: url("../framework/css/images/warning-o1-a5.png");
+    height: 56px;
+    width: 60px;
+}
+
+.notice.notice-1 .noticeImage.Warning,
+.notice.notice-1 .noticeImage.Danger,
+.notice.notice-1 .noticeImage.Caution,
+.notice.notice-1 .noticeImage.Attention{
+    background-image: url("../framework/css/images/warning-o1.png");
+    height: 112px;
+    margin-right: 20px !important;
+    width: 105px;
+    margin-bottom:0 !important;
+}
+
+
+.notice.notice-2{
+    background-color: rgb(197, 197, 199);
+}
+
+.notice.notice-2 .icon{
+    width:25% !important;
+}
+
+.notice.notice-2 .noticeContent{
+    max-width:70% !important;
+}
+
+.notice.notice-2 .noticeImage{
+    width:1px;
+    height:1px;
+}
+
+.notice.notice-2 .noticeImage.Warning,
+.notice.notice-2 .noticeImage.Danger,
+.notice.notice-2 .noticeImage.Caution{
+    background-image: url("../framework/css/images/warning-o2.png");
+    height: 36px;
+    margin-bottom: 0 !important;
+    margin-right: 15px !important;
+    width: 42px;
+    background-repeat:no-repeat;
+}
+
+.notice.notice-2 .noticeImage.Advice{
+    background-image: url("../framework/css/images/info-o2.png");
+    height: 39px;
+    margin-bottom: 0;
+    margin-right: 18px;
+    width: 39px;
+}
+
+
+.notice.notice-3{
+    border:2px solid black;
+    padding: 0 2% 2%;
+    background-color:white;
+}
+
+.notice.notice-3 .icon{
+    display:none;
+}
+
+.notice.notice-3 > .noticeContent{
+    width: 105%;
+}
+
+.notice.notice-3 .noticeTitle{
+    background-position: 20% -6px;
+    background-repeat: no-repeat;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: -2%;
+    padding-bottom: 8px;
+    padding-top: 12px;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-color: #FF3818;
+    background-image: url("../framework/css/images/warning-o3-white.png");
+    color: white !important;
+    background-position: 25% -6px;
+}
+
+.a4-landscape .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:39% -6px !important;
+}
+
+.a4-landscape .number-of-columns-1 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:45% -6px !important;
+}
+
+.a4-landscape .number-of-columns-2 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:39% -6px !important;
+}
+
+.a4-landscape .number-of-columns-3 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:35% -6px !important;
+}
+
+.a4-landscape .number-of-columns-3 .notice.notice-3 .noticeTitle{
+    background-position:32% -6px !important;
+}
+
+.a5-portrait .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:24% -6px !important;
+}
+
+.a5-portrait .number-of-columns-1 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:38% -6px !important
+}
+
+.a5-portrait .number-of-columns-2 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:25% -6px !important;
+}
+
+.a5-portrait .number-of-columns-3 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:6% -6px !important;
+}
+
+
+
+.a5-landscape .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:34% -6px !important;
+}
+
+.a5-landscape .number-of-columns-1 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:42% -6px !important;
+}
+
+.a5-landscape .number-of-columns-2 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:34% -6px !important;
+}
+
+.a5-landscape .number-of-columns-3 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:25% -6px !important;
+}
+
+.a4-portrait .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:34% -6px !important;
+}
+
+.a4-portrait .number-of-columns-3 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:25% -6px !important;
+}
+
+.a4-portrait .number-of-columns-2 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:34% -6px !important;
+}
+
+.a4-portrait .number-of-columns-1 .notice.notice-3 .noticeContent.Danger .noticeTitle{
+    background-position:42% -6px !important;
+}
+
+.a4-portrait .number-of-columns-1 .notice.notice-3 .noticeTitle{
+    background-position:41% -6px !important;
+}
+
+.a4-portrait .notice.notice-3 .noticeTitle{
+    background-position:31% -6px !important;
+}
+
+.a4-portrait .number-of-columns-2 .notice.notice-3 .noticeTitle{
+    background-position:32% -6px !important;
+}
+
+.a4-portrait .number-of-columns-3 .notice.notice-3 .noticeTitle{
+    background-position:21% -6px !important;
+}
+
+.a5-portrait .number-of-columns-1 .notice.notice-3 .noticeTitle{
+    background-position:35% -6px;
+}
+
+
+.a5-portrait .number-of-columns-3 .notice.notice-3 .noticeTitle{
+    background-position:-1% -6px;
+}
+
+.a5-portrait .notice.notice-3 .noticeTitle {
+    background-position: 20% -6px;
+}
+
+.a4-landscape .notice.notice-3 .noticeTitle {
+    background-position: 38% -6px;
+}
+
+.a4-landscape .number-of-columns-1 .notice.notice-3 .noticeTitle{
+    background-position:44% -6px;
+}
+
+.a4-landscape .number-of-columns-2 .notice.notice-3 .noticeTitle{
+    background-position:38% -6px;
+}
+
+.a5-landscape .notice.notice-3 .noticeTitle {
+    background-position: 32% -6px;
+}
+
+.a5-landscape .number-of-columns-1 .notice.notice-3 .noticeTitle{
+    background-position:41% -6px !important;
+}
+
+.a5-landscape .number-of-columns-2 .notice.notice-3 .noticeTitle{
+    background-position:29% -6px !important;
+}
+
+.a5-landscape .number-of-columns-3 .notice.notice-3 .noticeTitle{
+    background-position:22% -6px !important;
+}
+
+.notice.notice-3 .noticeContent.Warning .noticeTitle{
+    background-color: #FF8D26;
+    background-image: url("../framework/css/images/warning-o3-black.png");
+}
+
+.notice.notice-3 .noticeContent.Caution .noticeTitle{
+    background-color: #FFE946;
+    background-image: url("../framework/css/images/warning-o3-black.png");
+}
+
+.notice.notice-3 .noticeContent.Advice .noticeTitle{
+    background-color: #006CAE;
+    color:white !important;
+}
+
+.notice.notice-3 .noticeContent.Elektrik .noticeTitle{
+    background-image: url("../framework/css/images/electricity-op3.png");
+}
+
+.notice.notice-3.Advice .noticeTitle{
+    font-style:italic;
+}
+
+.notice.AdviceNoTitle{
+    border-left: 0 none;
+    border-right: 0 none;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+.notice.notice-3 .noticeContent.Danger .noticeTitle::after,
+.notice.notice-3 .noticeContent.Elektrik .noticeTitle::after,
+.notice.notice-3 .noticeContent.Caution .noticeTitle::after,
+.notice.notice-3 .noticeContent.Warning .noticeTitle::after{
+    content: "!"
+}
+
+
+.notice.notice-4{
+    border-bottom: 2px solid #c4c4c6;
+    border-top: 2px solid #c4c4c6;
+    background-color:transparent
+}
+
+.notice.notice-4 .noticeImage{
+    width:1px;
+    height:1px;
+}
+
+.notice.notice-4 .noticeImage.Advice{
+    background-image: url("../framework/css/images/info-o1.png");
+    height: 96px;
+    margin-right: 31px;
+    width: 94px;
+}
+
+.a5-portrait .notice.notice-4 .noticeImage.Advice{
+    background-image: url("../framework/css/images/info-o1-a5.png");
+    width:50px;
+    height:51px;
+}
+
+.notice.notice-4 .noticeImage.Warning,
+.notice.notice-4 .noticeImage.Danger,
+.notice.notice-4 .noticeImage.Caution,
+.notice.notice-4 .noticeImage.Attention{
+    background-image: url("../framework/css/images/warning-o1.png");
+    height: 112px;
+    margin-right: 20px !important;
+    width: 105px;
+    margin-bottom:0 !important;
+}
+
+.a5-portrait .notice.notice-4 .noticeImage.Warning,
+.a5-portrait .notice.notice-4 .noticeImage.Danger,
+.a5-portrait .notice.notice-4 .noticeImage.Caution,
+.a5-portrait .notice.notice-4 .noticeImage.Attention{
+    background-image: url("../framework/css/images/warning-o1-a5.png");
+    height: 56px;
+    width: 60px;
+}
+
+/**
+ * FOOTER
+ * 
+ * @see https://mantis.ec-systems.de/view.php?id=6709
+ */
+.footer .middle *{
+    text-align:center;
+}
+
+.footer .footer-empty *{
+    display:none
+}
+
+.footer .pull-right *{
+    text-align:right;
+}
+
+.footer .content > div{
+    width:33%;
+    height:10%;
+}
+
+.footer .hiddenFooter *{
+    visibility:hidden;
+}
+
+.footer > .content > .logo *{
+    display:none;
+}
+
+.footer > .content > .logo .logo,
+.footer > .content > .logo .logo *{
+    display:block !important;
+    max-height: 50px;
+}
+
+.footer > .content > .publish-date *{
+    display:none;
+}
+
+.footer > .content > .publish-date .date{
+    display:block !important;
+}
+
+.footer > .content > .main-title *{
+    display:none;
+}
+
+.footer > .content > .main-title .title{
+    display:block !important;
+}
+
+.footer > .content > .chapter-title *{
+    display:none;
+}
+
+.footer > .content > .chapter-title .chapter{
+    display:block !important;
+}
+
+.footer > .content > .main-title-and-chapter-title *{
+    display:none;
+}
+
+.footer > .content > .main-title-and-chapter-title .title-chapter{
+    display:block !important;
+}
+
+.footer > .content > .product-name *{
+    display:none;
+}
+
+.footer > .content > .product-name .productName{
+    display:block !important;
+}
+
+.footer > .content > .page-number *{
+    display:none;
+}
+
+.footer > .content > .page-number .pageNumber{
+    display:block !important;
+}
+
+.footer > .content > .version-number *{
+    display:none;
+}
+
+.footer > .content > .version-number .version{
+    display:block !important;
+}
+
+.footer > .content > .document-name *{
+    display:none;
+}
+
+.footer > .content > .document-name .documentName{
+    display:block !important;
+}
+

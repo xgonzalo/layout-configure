@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="38.633999"
+   height="38.645"
+   viewBox="0 0 38.634 38.645"
+   id="Layer_1"
+   xml:space="preserve"><metadata
+   id="metadata15"><rdf:RDF><cc:Work
+       rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+         rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><defs
+   id="defs13" />
+<g
+   id="g3">
+	<path
+   d="m 0,2.789 v 33.067 c 0,1.859 0.929,2.789 2.788,2.789 h 33.854 c 1.287,0 1.991,-1.447 1.991,-2.789 V 2.789 C 38.633,0.929 37.704,0 35.845,0 H 2.788 C 0.929,0 0,0.929 0,2.789 l 0,0 z"
+   inkscape:connector-curvature="0"
+   id="path5"
+   style="fill:#394142;fill-rule:evenodd" />
+	<polygon
+   points="15.301,20.686 15.301,31.996 13.076,31.996 13.076,35.988 26.43,35.988 26.43,31.996 23.647,31.996 23.647,16.694 12.52,16.694 12.52,20.686 12.52,20.686 "
+   id="polygon7"
+   style="fill:#ffffff;fill-rule:evenodd" />
+	<path
+   d="m 18.587,13.976 c 3.148,0 5.701,-2.553 5.701,-5.701 0,-3.148 -2.553,-5.701 -5.701,-5.701 -3.147,0 -5.701,2.553 -5.701,5.701 0,3.148 2.554,5.701 5.701,5.701 l 0,0 z"
+   inkscape:connector-curvature="0"
+   id="path9"
+   style="fill:#ffffff;fill-rule:evenodd" />
+</g>
+</svg>

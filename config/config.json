@@ -1,0 +1,303 @@
+var config = {
+    "application": {
+        "client": "2w",
+        "name": "2w.layout.configurator",
+        "logo": {
+	    "path": "/path/to/logo",
+	    "link": "http://www.url.com"
+	},
+	"footer": "application.footer.text",
+        "pdfHandler" : "handler/pdf.php",
+        "contactForm": {
+            "url": "handler/finish.php",
+            "legalText" : "contact.form.legal.text",
+            "successMessage" : "contact.form.success.message",
+            "fields": [
+                {
+                    "name": "contact.form.field.salutation",
+                    "key": "salutation",
+                    "type": "combo",
+                    "mandatory": 1,
+                    "values" : [
+                        {
+                            "text" : "contact.form.field.salutation.mrs",
+                            "value" : "Frau"
+                        },
+                        {
+                            "text" : "contact.form.field.salutation.mr",
+                            "value" : "Herr"
+                        }
+                    ]
+                },
+                {
+                    "name": "contact.form.field.firstname",
+                    "key": "firstname",
+                    "type": "text",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.lastname",  
+                    "key": "lastname",
+                    "type": "text",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.company",  
+                    "key": "company",
+                    "type": "text",
+                    "mandatory": 0,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.email",
+                    "key": "email",
+                    "type": "email",
+                    "mandatory": 1,
+                    "maxChars": 250
+                },
+                {
+                    "name": "contact.form.field.agree",
+                    "key": "agree",
+                    "type": "checkbox",
+                    "mandatory": 1,
+                    "values" : [
+                        {
+                            "value" : "yes",
+                            "status" : true
+                        },
+                        {
+                            "value" : "no",
+                            "status" : false
+                        }
+                    ]
+                },
+                {
+                    "name": "contact.form.field.contact",
+                    "key": "contact",
+                    "type": "radio",
+                    "mandatory": 1,
+                    "values" : [
+                        {
+                            "text" : "contact.form.field.contact.yes",
+                            "value" : "yes"
+                        },
+                        {
+                            "text" : "contact.form.field.contact.no",
+                            "value" : "no"
+                        }
+                    ]
+                }
+            ]
+        }
+    },
+    "docTypes" : [
+        {
+            "name": "service.manual",
+            "description": "service.manual.description",
+            "id": "style1",
+            "icon": "framework/css/images/document1.png",
+            "content": "client/2w/build/content/pages.html",
+            "style": "client/2w/build/styles/style1/style.css",
+            "layoutOptions": {
+                "format": "a4-portrait",
+                "number-of-columns": "2",
+                "marginalia": "marginalia-no",
+                "image-type": "halftone-with-highlighting",
+                "safety-information": "notice-1",
+                "tables": "option-1",
+                "header": {
+                        "outside": "main-title",
+                        "middle": "version-number",
+                        "inside": "chapter-title"
+                },
+                "footer": {
+                        "outside": "main-title",
+                        "middle": "page-number",
+                        "inside": "chapter-title"
+                }
+            }
+        },
+        {
+            "name": "end.consumer.manual",
+            "description": "end.consumer.manual.description",
+            "id": "style2",
+            "icon": "framework/css/images/document2.png",
+            "content": "client/2w/build/content/pages.html",
+            "style": "client/2w/build/styles/style1/style.css",
+            "layoutOptions": {
+                "format": "a5-portrait",
+                "number-of-columns": "2",
+                "marginalia": "marginalia-no",
+                "image-type": "halftone-with-highlighting",
+                "safety-information": "notice-1",
+                "tables": "option-1",
+                "header": {
+                        "outside": "main-title",
+                        "middle": "version-number",
+                        "inside": "chapter-title"
+                },
+                "footer": {
+                        "outside": "main-title",
+                        "middle": "page-number",
+                        "inside": "chapter-title"
+                }
+            }
+        }
+    ],
+    "layoutOptions": [
+        {
+            "name": "personalization",
+            "object": "Personalization",
+            "type": "custom",
+            "sections": ["image", "logo"],
+            "scrollTo": true,
+            "options": {
+                "elements": [".personalizable"],
+                "values": []
+            }
+        },
+        {
+            "name": "number-of-columns",
+            "object": "NumberOfColumns",
+            "type": "custom",
+            "sections": [],
+            "scrollTo": true,
+            "options": {
+                "elements": [".columnizable > .bodyContent .documentContent"],
+                "values": [ 
+                    "1",
+                    "2",
+                    "3"
+                ]
+            }
+        },
+        {
+            "name": "format",
+            "object": "Format",
+            "type": "custom",
+            "sections": [],
+            "scrollTo": false,
+            "options": {
+                "elements": [],
+                "values": [ 
+                    "a4-portrait",
+                    "a5-portrait",
+                    "a4-landscape",
+                    "a5-landscape"
+                ]
+            }
+        },
+        {
+            "name": "safety-information",
+            "js": "",
+            "sections": [],
+            "scrollTo": true,
+            "options": {
+                "elements": [".notice"],
+                "values": [
+                    "notice-1",
+                    "notice-2",
+                    "notice-3",
+                    "notice-4"
+                ]
+            }
+        },
+        {
+            "name": "header",
+            "js": "",
+            "sections": [
+                "outside",
+                "middle",
+                "inside"
+            ],
+            "scrollTo": false,
+            "type": "combo",
+            "options": {
+                "elements": [".header"],
+                "values": [ 
+                    "header-empty",
+                    "main-title",
+                    "chapter-title",
+                    "main-title-and-chapter-title",
+                    "logo",
+                    "publish-date",
+                    "product-name",
+                    "version-number",
+                    "document-name"
+                ]
+            }
+        },
+        {
+            "name": "footer",
+            "js": "",
+            "sections": [
+                "outside",
+                "middle",
+                "inside"
+            ],
+            "scrollTo": false,
+            "type": "combo",
+            "options": {
+                "elements": [".footer"],
+                "values": [ 
+                    "footer-empty",
+                    "main-title",
+                    "chapter-title",
+                    "main-title-and-chapter-title",
+                    "logo",
+                    "publish-date",
+                    "product-name",
+                    "version-number",
+                    "document-name",
+                    "page-number"
+                ]
+            }
+        },
+        {
+            "name": "tables",
+            "js": "",
+            "sections": [],
+            "scrollTo": true,
+            "options": {
+                "elements": ["table"],
+                "values": [ 
+                    "option-1",
+                    "option-2",
+                    "option-3",
+                    "option-4"
+                ]
+            }
+        },
+        {
+            "name": "image-type",
+            "js": "",
+            "sections": [],
+            "scrollTo": true,
+            "options": {
+                "elements": [".image"],
+                "values": [ 
+                    "halftone-with-highlighting",
+                    "halftone-on-black-white",
+                    "knitted-black-white",
+                    "stroke-color"
+                ]
+            }
+        },
+        {
+            "name": "marginalia",
+            "js": "",
+            "sections": [],
+            "scrollTo": true,
+            "scrollToPage": 3,
+            "options": {
+                "elements": [".documentContent"],
+                "values": [ 
+                    "marginalia-yes",
+                    "marginalia-no"
+                ]
+            }
+        }
+    ]
+}
